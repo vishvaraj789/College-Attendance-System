@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/admin.css}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Admin Dashboard</h1>
+        <a href="/login" class="logout">Logout</a>
+    </header>
+
+    <!-- Dashboard Cards -->
+    <div class="dashboard">
+
+        <a href="/admin/students" class="card">
+            <h3>Manage Students</h3>
+            <p>Add / View / Update Students</p>
+        </a>
+
+        <a href="/admin/faculty" class="card">
+            <h3>Manage Faculty</h3>
+            <p>Add / View Faculty</p>
+        </a>
+
+        <a href="/admin/subjects" class="card">
+            <h3>Manage Subjects</h3>
+            <p>Create & Manage Subjects</p>
+        </a>
+
+        <a href="/admin/assign-faculty" class="card">
+            <h3>Assign Faculty</h3>
+            <p>Faculty → Subject</p>
+        </a>
+
+        <a href="/admin/assign-student" class="card">
+            <h3>Assign Student</h3>
+            <p>Student → Class / Dept</p>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
