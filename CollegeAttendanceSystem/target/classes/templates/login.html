@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>College Attendance System - Login</title>
+
+    <!-- Correct Thymeleaf paths -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<form id="loginForm">
+    <h2>College Attendance System</h2>
+
+    <input type="text" id="username" placeholder="Username" required>
+
+    <input type="password" id="password" placeholder="Password" required>
+
+    <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="ADMIN">Admin</option>
+        <option value="FACULTY">Faculty</option>
+        <option value="STUDENT">Student</option>
+    </select>
+
+    <button type="submit">Login</button>
+
+    <p id="errorMsg"></p>
+</form>
+
+<script th:src="@{/js/login.js}"></script>
+</body>
+</html>
